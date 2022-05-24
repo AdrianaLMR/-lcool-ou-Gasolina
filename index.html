@@ -1,0 +1,69 @@
+
+<h1></h1>---------------------------------------------</h1>
+<h1> Insira os valores e descubra qual combustivel é mais vantajoso para você!</h1>
+</h1>--------------------------------------------------<h1> 
+
+
+
+<script>
+
+  
+
+// // Output
+// // alert ('Mensagem');
+// // console.log('String')
+// // document.write('Nutella')
+// var nome = prompt('digite seu nome :');
+// alert('bem vindo ao nosso sitema ' + nome );
+
+// var nota_1 = prompt('Digite nota 1: ');
+// var nota_2 = prompt('Digite nota 2: ');
+// var nota_3 = prompt('Digite nota 3: ');
+// var nota_4 = prompt('Digite nota 4: ');
+
+// var soma = (parseFloat (nota_1 ) +
+//             parseFloat (nota_2) + 
+//             parseFloat (nota_3) + 
+//             parseFloat (nota_4));
+
+// var média = soma / 4;
+
+// // aprovado > 60
+// // reporvado < 60
+
+// if(média > 60){
+// document.write('Aprovado');
+// }else{
+//  document.write('Você foi reprovado. ');
+// }
+
+// document.write('A soma de suas notas são: ' + soma + '<br>'); 
+
+// document.write('A media de suas notas são: ' + média + '<br>' );
+
+
+do {
+    var gasolina = prompt('Digite o valor da gasolina: ');
+    var álcool = prompt('Digite o valor do álcool: ');
+    var repetir = true;
+    var multiplicador = (parseInt(álcool) / parseInt(gasolina));
+    document.write('O resultado da operação é: ' + multiplicador + ',');
+
+    if (multiplicador > 0.7) {
+        document.write(' Vantagem da gasolina');
+    } else if (multiplicador < 0.7) {
+        document.write(' Vantagem do Álcool');
+    } else if (multiplicador == 0.7) {
+        document.writeg(' Ambos combustiveis são iguais, não há vantagem');
+    } else {
+        document.write('Para repetir a operação basta digitar 1');
+    }
+    resposta = prompt('Gostaria de efetuar uma nova operação(s/n): ');
+    if (resposta == 'n') {
+        repetir = false;
+    }
+} while (repetir = false);
+
+
+
+</script>
