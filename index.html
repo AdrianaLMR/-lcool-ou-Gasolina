@@ -1,69 +1,47 @@
-
-<h1></h1>---------------------------------------------</h1>
-<h1> Insira os valores e descubra qual combustivel é mais vantajoso para você!</h1>
-</h1>--------------------------------------------------<h1> 
-
-
-
-<script>
-
-  
-
-// // Output
-// // alert ('Mensagem');
-// // console.log('String')
-// // document.write('Nutella')
-// var nome = prompt('digite seu nome :');
-// alert('bem vindo ao nosso sitema ' + nome );
-
-// var nota_1 = prompt('Digite nota 1: ');
-// var nota_2 = prompt('Digite nota 2: ');
-// var nota_3 = prompt('Digite nota 3: ');
-// var nota_4 = prompt('Digite nota 4: ');
-
-// var soma = (parseFloat (nota_1 ) +
-//             parseFloat (nota_2) + 
-//             parseFloat (nota_3) + 
-//             parseFloat (nota_4));
-
-// var média = soma / 4;
-
-// // aprovado > 60
-// // reporvado < 60
-
-// if(média > 60){
-// document.write('Aprovado');
-// }else{
-//  document.write('Você foi reprovado. ');
-// }
-
-// document.write('A soma de suas notas são: ' + soma + '<br>'); 
-
-// document.write('A media de suas notas são: ' + média + '<br>' );
-
-
-do {
-    var gasolina = prompt('Digite o valor da gasolina: ');
-    var álcool = prompt('Digite o valor do álcool: ');
-    var repetir = true;
-    var multiplicador = (parseInt(álcool) / parseInt(gasolina));
-    document.write('O resultado da operação é: ' + multiplicador + ',');
-
-    if (multiplicador > 0.7) {
-        document.write(' Vantagem da gasolina');
-    } else if (multiplicador < 0.7) {
-        document.write(' Vantagem do Álcool');
-    } else if (multiplicador == 0.7) {
-        document.writeg(' Ambos combustiveis são iguais, não há vantagem');
-    } else {
-        document.write('Para repetir a operação basta digitar 1');
-    }
-    resposta = prompt('Gostaria de efetuar uma nova operação(s/n): ');
-    if (resposta == 'n') {
-        repetir = false;
-    }
-} while (repetir = false);
-
-
-
-</script>
+<!DOCTYPE html>
+<html lang="br">
+    <head>
+        <meta charset="utf-8">
+        <title>Olá seja bem vindo ao meu programa!!!</title>
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body>
+        <script src="assets/combustivel.js"></script>
+        <header>
+           <img src = "assets/imgs/imagens perfil.jpg" alt = "Ilustração do rosto de Adriana Lidiane Machado da Rosa" width = "15%"  class = "photo">
+            <h1 id = "Title">Olá me chamo Adriana Machado, sejá bem vindo ao meu prgrama!!!</h1>
+        </header>
+        <section>
+            <article class="post">
+                <header>
+                    <img src ="assets/imgs/imgAlccolGasolina.png" alt = "Editor de texto contendo código" class = "post_img">
+                    <h3 class = "Post_title">Álcool ou Gasolina?</h3>
+                </header>
+                <p class = "post_content">
+                    Com o aumento da gasolina só podemos pensar em uma pergunta !! Álcool ou Gasolina? E para isso criei um programa em onde você pode calcular o combustivel mais vantajoso.
+                </p>
+            </article>
+        </section>
+        <section>
+            <article class="post">
+                <header>
+                    <h3 class = "Post_title">Informações de contato:</h3>
+                </header>
+                <ul class = "content_list">
+                    <li>
+                        <a href = "mailto:trevenlynk038@gmail.com">trevenlynk038@gmail.com</a>
+                    </li>
+                    <li>
+                        <a href = "https://www.linkedin.com/in/adriana-machado-da-rosa-0451ab22a/"target = "_blank">Adriana Machado da Rosa</a>
+                    </li>
+                    <li>
+                        <a href = "https://github.com/AdrianaLMR"target = "_blank">AdrianaLMR</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </body>
+    <footer>
+        <p class = "SubTitle"> Obrigada por visitar meu programa.</p>
+    </footer>
+</html>

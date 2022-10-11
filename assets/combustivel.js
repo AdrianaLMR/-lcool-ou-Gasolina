@@ -1,10 +1,4 @@
-
-
-
-
-console.log('-------------------------------');
-console.log('Insira os valores e descubra qual combustivel é mais vantajoso para você!');
-console.log('-------------------------------');
+function vantagemCombustivel() {
 
 do {
     var gasolina = prompt('Digite o valor da gasolina: ');
@@ -28,8 +22,4 @@ do {
     }
 } while (repetir);
 
-console.log('-------------------------------');
-console.log('Muito obrigado');
-console.log('Programa finalizado');
-console.log('-------------------------------');
-
+}
