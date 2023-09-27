@@ -1,5 +1,4 @@
 # Álcool-ou-Gasolina
-
-<p> Programa que avalia qual combustível é mais vantajoso. </p>
+<p>Trabalho avaliativo do cruso superior: Tecnologia em sistema para internet, consistia em criar um programa que avalia qual combustível traz mais vantagens. </p>
 <p> :car::moneybag: :car: :moneybag: </p>
 
