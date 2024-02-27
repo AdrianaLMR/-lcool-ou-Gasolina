@@ -1,47 +1,44 @@
 <!DOCTYPE html>
-<html lang="br">
-    <head>
-        <meta charset="utf-8">
-        <title>Olá seja bem vindo ao meu programa!!!</title>
-        <link rel="stylesheet" href="assets/style.css">
-    </head>
-    <body>
-        <script src="assets/combustivel.js"></script>
-        <header>
-           <img src = "assets/imgs/imagens perfil.jpg" alt = "Ilustração do rosto de Adriana Lidiane Machado da Rosa" width = "15%"  class = "photo">
-            <h1 id = "Title">Olá me chamo Adriana Machado, sejá bem vindo ao meu prgrama!!!</h1>
-        </header>
-        <section>
-            <article class="post">
-                <header>
-                    <img src ="assets/imgs/imgAlccolGasolina.png" alt = "Editor de texto contendo código" class = "post_img">
-                    <h3 class = "Post_title">Álcool ou Gasolina?</h3>
-                </header>
-                <p class = "post_content">
-                    Com o aumento da gasolina só podemos pensar em uma pergunta !! Álcool ou Gasolina? E para isso criei um programa em onde você pode calcular o combustivel mais vantajoso.
-                </p>
-            </article>
-        </section>
-        <section>
-            <article class="post">
-                <header>
-                    <h3 class = "Post_title">Informações de contato:</h3>
-                </header>
-                <ul class = "content_list">
-                    <li>
-                        <a href = "mailto:trevenlynk038@gmail.com">trevenlynk038@gmail.com</a>
-                    </li>
-                    <li>
-                        <a href = "https://www.linkedin.com/in/adriana-machado-da-rosa-0451ab22a/"target = "_blank">Adriana Machado da Rosa</a>
-                    </li>
-                    <li>
-                        <a href = "https://github.com/AdrianaLMR"target = "_blank">AdrianaLMR</a>
-                    </li>
-                </ul>
-            </article>
-        </section>
-    </body>
-    <footer>
-        <p class = "SubTitle"> Obrigada por visitar meu programa.</p>
-    </footer>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>ÁlcooL ou Gasolina?</title>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <h1>ÁlcooL ou Gasolina?</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="img-text">
+            <img class="post-img" src="assets/imgs/imgAlccolGasolina.png" alt="Imagem ÁlcooL ou Gasolina?">
+            <p>
+                Com o aumento da gasolina só podemos pensar em uma pergunta!!
+                Álcool ou Gasolina? E para isso criei um programa onde você
+                pode calcular o combustível mais vantajoso.
+            </p>
+        </div>
+        <div class="calculator">
+            <h2>Calculadora de Vantagem Álcool x Gasolina?</h2>
+            <form id="calculator-form">
+                <label for="alcohol-price">Preço do Álcool:</label>
+                <input type="number" id="alcohol-price" step="0.01" min="0.01" required placeholder="Preço do Álcool por Litro"><br><br>
+
+                <label for="gas-price">Preço da Gasolina:</label>
+                <input type="number" id="gas-price" step="0.01" min="0.01" required placeholder="Preço da Gasolina por Litro"><br><br>
+
+                <div id="result">
+                    <div id="result-display">Resultado: <span id="result-value">0</span></div>
+                </div>
+                
+                <button type="button" id="btn-calcular">Calcular Vantagem</button>
+                <button type="button" id="btn-refazer">Calcular Novamente</button>
+            </form>
+        </div>
+    </div>
+    <script src="assets/combustivel.js"></script>
+</body>
 </html>

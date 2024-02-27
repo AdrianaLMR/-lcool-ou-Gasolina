@@ -1,25 +1,28 @@
-function vantagemCombustivel() {
+document.getElementById('btn-calcular').addEventListener('click', function() {
+    var alcoholPrice = parseFloat(document.getElementById('alcohol-price').value);
+    var gasPrice = parseFloat(document.getElementById('gas-price').value);
 
-do {
-    var gasolina = prompt('Digite o valor da gasolina: ');
-    var álcool = prompt('Digite o valor do álcool: ');
-    var repetir = true;
-    var multiplicador = (parseInt(álcool) / parseInt(gasolina));
-    console.log('O resultado da operação é: ' + multiplicador);
+    if (isNaN(alcoholPrice) || isNaN(gasPrice) || alcoholPrice <= 0 || gasPrice <= 0) {
+        alert('Por favor, insira valores válidos para os preços do álcool e da gasolina.');
+        return;
+    }
 
-    if (multiplicador > 0.7) {
-        console.log(' Vantagem da gasolina');
-    } else if (multiplicador < 0.7) {
-        console.log(' Vantagem do Álcool');
-    } else if (multiplicador == 0.7) {
-        console.log(' Ambos combustiveis são iguais, não há vantagem');
+    var message;
+    if (alcoholPrice < gasPrice) {
+        message = 'Vantagem do Álcool';
+    } else if (alcoholPrice > gasPrice) {
+        message = 'Vantagem da Gasolina';
     } else {
-        console.log('Para repetir a operação basta digitar 1');
+        message = 'Ambos combustíveis têm o mesmo custo';
     }
-    resposta = prompt('Gostaria de efetuar uma nova operação(s/n): ');
-    if (resposta == 'n') {
-        repetir = false;
-    }
-} while (repetir);
 
-}
+    var advantage = (alcoholPrice / gasPrice).toFixed(2);
+    var resultDisplay = document.getElementById('result-display');
+    resultDisplay.textContent = 'Resultado: ' + advantage + ' - ' + message;
+});
+
+document.getElementById('btn-refazer').addEventListener('click', function() {
+    document.getElementById('alcohol-price').value = '';
+    document.getElementById('gas-price').value = '';
+    document.getElementById('result-display').textContent = 'Resultado: ';
+});
